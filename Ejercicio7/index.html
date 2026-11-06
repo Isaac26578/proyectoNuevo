@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 7: Layout completo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="pagina-contenedor">
+    
+    <!-- 1. Header -->
+    <header class="header">
+      <h1>Mi Página Flexbox</h1>
+      <p class="subtitulo-header">Diseño web adaptable</p>
+    </header>
+
+    <!-- 2. Menú de navegación horizontal -->
+    <nav class="menu-nav">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Acerca de</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <!-- 3. Contenedor principal para barra lateral y contenido de blog (Proporción 30% - 70%) -->
+    <main class="main-content">
+      
+      <!-- Barra lateral (30%) -->
+      <aside class="sidebar">
+        <h3>El señor duende</h3>
+        <div class="caja-gris">400 x 400</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+        <div class="caja-gris">400 x 200</div>
+        <div class="caja-gris">400 x 200</div>
+      </aside>
+
+      <!-- Contenido tipo blog (70%) -->
+      <section class="blog-section">
+        <article class="post">
+          <h2>Título del artículo del día</h2>
+          <p class="autor-fecha">Isaac Torres - 30 de Octubre, 2026</p>
+          <div class="banner-gris">668 x 200</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.</p>
+        </article>
+
+        <article class="post">
+          <h2>Otro post en este semestre</h2>
+          <p class="autor-fecha">Por Autor - 29 de Octubre, 2026</p>
+          <div class="banner-gris">668 x 200</div>
+          <p>Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+        </article>
+      </section>
+
+    </main>
+
+    <!-- 5. Footer al borde inferior -->
+    <footer class="footer">
+      <p>Footer</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>

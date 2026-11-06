@@ -1,0 +1,118 @@
+/* Reseteo general */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Requerimiento: La página ocupa toda la altura de la pantalla (100vh) */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f5f9;
+    color: #334155;
+  }
+  
+  /* Estilos del Header */
+  .site-header {
+    background-color: #1e293b;
+    color: #ffffff;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  /* Contenedor Flex para las 3 columnas intermedias */
+  .site-main {
+    display: flex;
+    flex: 1; /* Ocupa el espacio vertical restante entre el header y el footer */
+    gap: 15px;
+    padding: 15px;
+    background-color: #e2e8f0;
+  }
+  
+  /* Estilos comunes para las columnas */
+  .site-nav, .site-article, .site-aside {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+  
+  /* Columna 1: Nav (Ancho flexible base) */
+  .site-nav {
+    flex: 1;
+  }
+  
+  .site-nav h3 {
+    margin-bottom: 15px;
+    color: #0f172a;
+  }
+  
+  .site-nav ul {
+    list-style: none;
+  }
+  
+  .site-nav li a {
+    color: #3b82f6;
+    text-decoration: none;
+    line-height: 2;
+  }
+  
+  .site-nav li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Columna 2: Article - DOBLE de ancho que el resto (flex: 2) */
+  .site-article {
+    flex: 2;
+    border-top: 4px solid #3b82f6;
+  }
+  
+  .site-article h2 {
+    margin-bottom: 12px;
+    color: #0f172a;
+  }
+  
+  .site-article p {
+    color: #64748b;
+    line-height: 1.6;
+  }
+  
+  /* Columna 3: Aside (Ancho flexible base igual al Nav) */
+  .site-aside {
+    flex: 1;
+  }
+  
+  .site-aside h3 {
+    margin-bottom: 12px;
+    color: #0f172a;
+  }
+  
+  .site-aside p {
+    color: #64748b;
+    line-height: 1.5;
+  }
+  
+  /* Estilos del Footer */
+  .site-footer {
+    background-color: #cbd5e1;
+    color: #334155;
+    text-align: center;
+    padding: 15px;
+    font-weight: 500;
+  }
+  
+  /* Adaptabilidad para pantallas pequeñas (móviles) */
+  @media (max-width: 768px) {
+    body {
+      height: auto; /* Se libera la altura fija en móviles */
+    }
+    
+    .site-main {
+      flex-direction: column; /* Las columnas se apilan verticalmente */
+    }
+  }

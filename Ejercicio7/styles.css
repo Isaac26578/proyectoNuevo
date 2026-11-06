@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  /* Contenedor general con ancho máximo de 1000px y estructura flexible vertical para fijar el footer */
+  .pagina-contenedor {
+    max-width: 1000px;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 1. Header (Color salmón/rojo claro como en la guía) */
+  .header {
+    background-color: #fa8072;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+  }
+  
+  .header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+  
+  .subtitulo-header {
+    font-size: 0.9rem;
+    opacity: 0.9;
+  }
+  
+  /* 2. Menú de navegación (Color verde agua/turquesa) */
+  .menu-nav {
+    background-color: #20b2aa;
+    padding: 10px 20px;
+  }
+  
+  .menu-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  
+  .menu-nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* 3. Contenedor Main: Distribuye Barra lateral y Blog */
+  .main-content {
+    display: flex;
+    flex: 1; /* Ocupa el espacio vertical restante para empujar el footer abajo */
+    background-color: #e2e8f0;
+    gap: 15px;
+    padding: 15px;
+  }
+  
+  /* Barra lateral (30%) */
+  .sidebar {
+    flex: 0 0 30%;
+    background-color: #ffffff;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .sidebar h3 {
+    font-size: 1.1rem;
+    color: #1e293b;
+  }
+  
+  .sidebar p {
+    font-size: 0.85rem;
+    color: #64748b;
+    line-height: 1.4;
+  }
+  
+  /* Contenido tipo blog (70%) */
+  .blog-section {
+    flex: 0 0 calc(70% - 15px);
+    background-color: #ffffff;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .post {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .post h2 {
+    font-size: 1.1rem;
+    color: #1e293b;
+  }
+  
+  .autor-fecha {
+    font-size: 0.8rem;
+    color: #94a3b8;
+  }
+  
+  .post p {
+    font-size: 0.85rem;
+    color: #475569;
+    line-height: 1.4;
+  }
+  
+  /* Cajas grises simuladas dentro de las secciones (como los bloques 400x400 o 668x200 de la imagen) */
+  .caja-gris {
+    background-color: #cbd5e1;
+    color: #475569;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 0.85rem;
+    border-radius: 4px;
+  }
+  
+  .banner-gris {
+    background-color: #cbd5e1;
+    color: #475569;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 0.85rem;
+    border-radius: 4px;
+  }
+  
+  /* 5. Footer alineado siempre al borde inferior */
+  .footer {
+    background-color: #cbd5e1;
+    color: #334155;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: auto;
+  }

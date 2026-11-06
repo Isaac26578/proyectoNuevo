@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    /* Fondo exacto solicitado en el ejercicio */
+    background-color: #93d9e9;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Contenedor principal totalmente centrado en la página */
+  .pricing-container {
+    display: flex;
+    gap: 30px;
+    max-width: 1000px;
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Cajas de precios: mismo tamaño, sombra y bordes redondeados */
+  .pricing-card {
+    background-color: #ffffff;
+    /* Altura mínima exacta de 480px como indica la guía */
+    min-height: 480px;
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Cabecera con color salmón exacto */
+  .pricing-header {
+    background-color: #fa8072;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  /* Cuerpo de la tarjeta para distribuir elementos y botón abajo */
+  .pricing-body {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+  }
+  
+  .pricing-body ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .pricing-body li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 0.85rem;
+    color: #555;
+    text-align: center;
+  }
+  
+  /* Botón inferior */
+  .pricing-btn {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background 0.2s;
+    margin-top: 20px;
+  }
+  
+  .pricing-btn:hover {
+    background-color: #f1f1f1;
+  }

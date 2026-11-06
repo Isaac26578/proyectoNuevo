@@ -1,0 +1,100 @@
+/* Reseteo básico de márgenes */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Contenedor principal centrado */
+  .contenedor-principal {
+    max-width: 1100px;
+    width: 100%;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Título */
+  .encabezado-ejercicio h1 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+  }
+  
+  /* Layout de dos columnas principales usando Flexbox */
+  .contenido-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: flex-start;
+  }
+  
+  /* Columna de descripción */
+  .descripcion {
+    flex: 1 1 300px; /* Crece, se encoge y tiene una base de 300px */
+    background-color: #f8fafc;
+    padding: 20px;
+    border-left: 4px solid #3498db;
+    border-radius: 6px;
+  }
+  
+  .descripcion h2 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    color: #1e293b;
+  }
+  
+  .descripcion p {
+    line-height: 1.6;
+    color: #475569;
+  }
+  
+  /* Columna de la galería (módulo Flexbox adaptable) */
+  .galeria-grid {
+    flex: 2 1 450px; /* Ocupa más espacio proporcionalmente */
+    display: flex;
+    flex-wrap: wrap; /* Permite que las imágenes bajen si no caben */
+    gap: 15px;
+  }
+  
+  /* Tarjeta individual de cada imagen */
+  .tarjeta-imagen {
+    flex: 1 1 calc(33.333% - 15px); /* Intenta mostrar 3 por fila */
+    min-width: 120px; /* Evita que se reduzcan demasiado */
+    background-color: #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  /* Efecto hover elegante para diferenciar tu trabajo */
+  .tarjeta-imagen:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .tarjeta-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* Responsividad extra para pantallas pequeñas */
+  @media (max-width: 600px) {
+    .tarjeta-imagen {
+      flex: 1 1 calc(50% - 15px); /* Pasa a 2 por fila en móviles */
+    }
+  }
